@@ -9,6 +9,17 @@
 import UIKit
 
 class MyTableViewController: UITableViewController {
+    
+    let A=[
+        [
+            "name":"cell",
+            "pic":"img01.png"
+        ],
+        [
+            "name":"cell1",
+            "pic":"img02.png"
+        ]
+    ]
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,15 +45,17 @@ class MyTableViewController: UITableViewController {
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 5
+        return A.count
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-
+        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as! MyTableViewCell
+        
+        cell.name!.text = A[indexPath.row]["name"]
+        cell.pic!.image=UIImage(named:A[indexPath.row]["pic"]! )
         // Configure the cell...
-        cell.textLabel?.text = indexPath.row
+    
 
         return cell
     }
