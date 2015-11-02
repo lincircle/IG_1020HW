@@ -8,17 +8,17 @@
         <scene sceneID="45j-sU-weB">
             <objects>
                 <tableViewController id="fIj-kQ-oKy" customClass="MyTableViewController" customModule="IG_1020HW" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="311" sectionHeaderHeight="28" sectionFooterHeight="28" id="JdR-z8-UYM">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="360" sectionHeaderHeight="28" sectionFooterHeight="28" id="JdR-z8-UYM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="311" id="DwB-4m-0Qy" customClass="MyTableViewCell" customModule="IG_1020HW" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="28" width="320" height="311"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="360" id="DwB-4m-0Qy" customClass="MyTableViewCell" customModule="IG_1020HW" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="320" height="360"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DwB-4m-0Qy" id="SAN-Nh-lsQ">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="310"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="359"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="X0e-wh-03P">
@@ -34,6 +34,12 @@
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                             <animations/>
                                         </imageView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="LdP-MG-enZ">
+                                            <rect key="frame" x="230" y="313" width="82" height="38"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <animations/>
+                                            <state key="normal" title="確認"/>
+                                        </button>
                                     </subviews>
                                     <animations/>
                                 </tableViewCellContentView>
